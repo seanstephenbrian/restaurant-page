@@ -21,6 +21,34 @@ time, mark, audio, video {
 
 :root {
     --rvv: calc(1rem + 1vh + 1vw);
+    --shadow-offset: calc(0.1*var(--rvv));
+    --red: #D32929;
+    --yellow: #FACD1E;
+}
+
+@font-face {
+    font-family: 'Serreria Extravagante';
+    src: url('./fonts/serreria/extravagante/serreria-extravagante.otf');
+}
+
+@font-face {
+    font-family: 'Serreria Sobria';
+    src: url('./fonts/serreria/sobria/serreria-sobria.otf');
+}
+
+@font-face {
+    font-family: 'Neometrika';
+    src: url('./fonts/neometrika/neometrika-bold.ttf');
+}
+
+@font-face {
+    font-family: 'Rurik';
+    src: url('./fonts/rurik/rurik.ttf');
+}
+
+@font-face {
+    font-family: 'Mnemion';
+    src: url('./fonts/mnemion/mnemion.ttf');
 }
 
 html {
@@ -55,7 +83,7 @@ body {
 }
 
 .bg-filter {
-    backdrop-filter: saturate(5) sepia(60%) brightness(90%);
+    backdrop-filter: contrast(1.05) saturate(5) sepia(60%) brightness(90%);
     width: 100%;
     height: 100%;
     position: fixed;
@@ -69,14 +97,25 @@ body > * {
 }
 
 header {
+    padding: calc(0.5*var(--rvv)) 0;
+    font-family: 'Rurik';
+    font-size: calc(2*var(--rvv));
+    font-weight: 900;
+    text-shadow: calc(1.1*var(--shadow-offset)) var(--shadow-offset) var(--red);
+    letter-spacing: calc(.5*var(--rvv));
     width: 100%;
-    height: calc(2.5*var(--rvv));
+    min-height: calc(2.5*var(--rvv));
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .nav {
+    font-family: 'Serreria Extravagante';
+    font-size: calc(var(--rvv));
+    color: var(--yellow);
+    text-shadow: calc(0.8*var(--shadow-offset)) calc(0.8*var(--shadow-offset)) black;
     width: 100%;
     min-height: calc(1*var(--rvv));
     padding: calc(0.5*var(--rvv)) 0;
