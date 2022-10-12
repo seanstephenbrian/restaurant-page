@@ -1,4 +1,4 @@
-import { generateInitialStructure } from './init.js';
+import generateInitialStructure from './init.js';
 
 generateInitialStructure();
 

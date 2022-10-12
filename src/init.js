@@ -1,4 +1,4 @@
-const generateInitialStructure = (function() {
+const generateInitialStructure = () => {
 
     const body = document.querySelector('body');
 
@@ -12,8 +12,6 @@ const generateInitialStructure = (function() {
     const nav = document.createElement('div');
     nav.classList.add('nav');
     body.appendChild(nav);
-
-        nav.textContent = 'NAV';
 
     // create nav buttons & append them to nav:
     const menuButton = document.createElement('div');
@@ -50,6 +48,6 @@ const generateInitialStructure = (function() {
 
         footer.textContent = 'FOOTER';
 
-})();
+};
 
-export { generateInitialStructure };
+export default generateInitialStructure;
