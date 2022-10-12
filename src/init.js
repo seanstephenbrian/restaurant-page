@@ -5,8 +5,7 @@ const generateInitialStructure = () => {
     // create header section:
     const header = document.createElement('header');
     body.appendChild(header);
-
-        header.textContent = 'HEADER';
+    header.textContent = 'apicius cafe';
 
     // create nav div:
     const nav = document.createElement('div');
@@ -18,35 +17,29 @@ const generateInitialStructure = () => {
     menuButton.classList.add('menu-button');
     menuButton.classList.add('nav-button');
     nav.appendChild(menuButton);
-
-        menuButton.textContent = 'MENU BUTTON';
+    menuButton.textContent = 'menu';
 
     const specialsButton = document.createElement('div');
     specialsButton.classList.add('specials-button');
     specialsButton.classList.add('nav-button');
     nav.appendChild(specialsButton);
-
-        specialsButton.textContent = 'SPECIALS BUTTON';
+    specialsButton.textContent = `today's specials`;
 
     const aboutButton = document.createElement('div');
     aboutButton.classList.add('about-button');
     aboutButton.classList.add('nav-button');
     nav.appendChild(aboutButton);
-
-        aboutButton.textContent = 'ABOUT BUTTON';
+    aboutButton.textContent = 'about';
     
     // create main content div:
     const content = document.createElement('div');
     content.id = 'content';
     body.appendChild(content);
 
-        content.textContent = 'CONTENT';
-
     // create footer:
     const footer = document.createElement('footer');
     body.appendChild(footer);
-
-        footer.textContent = 'FOOTER';
+    footer.textContent = 'copyright © 2022 | sean stephen brian';
 
 };
 
