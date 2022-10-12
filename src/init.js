@@ -2,6 +2,10 @@ const generateInitialStructure = () => {
 
     const body = document.querySelector('body');
 
+    const bgFilter = document.createElement('div');
+    bgFilter.classList.add('bg-filter');
+    body.appendChild(bgFilter);
+
     // create header section:
     const header = document.createElement('header');
     body.appendChild(header);
