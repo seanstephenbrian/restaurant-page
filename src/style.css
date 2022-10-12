@@ -22,8 +22,8 @@ time, mark, audio, video {
 :root {
     --rvv: calc(1rem + 1vh + 1vw);
     --shadow-offset: calc(0.1*var(--rvv));
-    --red: #D32929;
-    --yellow: #FACD1E;
+    --red: #e60000;
+    --yellow: #ffd014;
 }
 
 @font-face {
