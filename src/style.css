@@ -31,32 +31,57 @@ html, body {
     min-height: 100vh;
 }
 
+        header,
+        footer,
+        body > div {
+            border: 1px solid red;
+        }
+
+        .nav > div {
+            border: 1px solid blue;
+        }
+
 body {
+    margin: 0 clamp(30px, 15vw, 225px);
     display: flex;
     flex-direction: column;
-    gap: calc(var(--rvv));
+    /* gap: calc(1.5*var(--rvv)); */
     align-items: center;
 }
 
 header {
+    width: 100%;
+    height: calc(2.5*var(--rvv));
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .nav {
+    width: 100%;
+    min-height: calc(1*var(--rvv));
+    padding: calc(0.5*var(--rvv)) 0;
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: calc(2*var(--rvv));
+    justify-content: center;
     align-items: center;
 }
 
 #content {
     display: flex;
+    flex: auto;
+    width: 100%;
     flex-direction: column;
+    padding: calc(1.5*var(--rvv)) 0;
     align-items: center;
 }
 
 footer {
+    min-height: calc(1.5*var(--rvv));
+    width: 100%;
     margin-top: auto;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
