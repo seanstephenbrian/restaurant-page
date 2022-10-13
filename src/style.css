@@ -55,9 +55,8 @@ body {
     margin: 0 clamp(30px, 15vw, 225px);
     display: flex;
     flex-direction: column;
-    /* gap: calc(1.5*var(--rvv)); */
     align-items: center;
-    background-image: url('./bg-smaller.jpg');
+    background-image: url('./img/bg.jpg');
     background-repeat: repeat-y;
     background-position: center;
     background-size: cover;
@@ -109,7 +108,7 @@ header {
     content: "";
     height: calc(1.8*var(--rvv));
     width: 100vw;
-    background: url('./mosaic.jpg') repeat 0 0;
+    background: url('./img/mosaic.jpg') repeat 0 0;
     filter: contrast(1.05) brightness(90%);
     background-size: 40em;
     display: block;
@@ -155,7 +154,7 @@ header {
     content: "";
     height: calc(2.5*var(--rvv));
     aspect-ratio: 1.2;
-    background-image: url('./fruit.png');
+    background-image: url('./img/fruit.png');
     background-size: cover;
     filter: contrast(1.05) brightness(90%);
     display: block;
@@ -164,7 +163,7 @@ header {
 }
 
 #content {
-    background-image: url('./paper.jpg');
+    background-image: url('./img/paper.jpg');
     background-size: cover;
     filter: sepia(60%) brightness(.9) ;
     position: relative;

@@ -1,4 +1,14 @@
+import Icon from './img/icon.png';
+
 const generateInitialStructure = () => {
+
+    // set favicon:
+    const head = document.querySelector('head');
+    const favIcon = document.createElement('link');
+    head.appendChild(favIcon);
+    favIcon.setAttribute('rel', 'icon');
+    favIcon.setAttribute('type', 'image/x-icon');
+    favIcon.setAttribute('href', Icon)
 
     const body = document.querySelector('body');
 
