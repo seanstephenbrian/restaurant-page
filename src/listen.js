@@ -1,4 +1,7 @@
-import { renderMenu, renderSpecials, renderAbout, renderContact } from "./render";
+import renderMenu from './menu.js';
+import renderSpecials from './specials.js';
+import renderAbout from './about.js';
+import renderContact from './contact.js'
 
 const addNavListeners = () => {
 
