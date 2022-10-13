@@ -30,6 +30,7 @@ const generateInitialStructure = () => {
     menuButton.textContent = 'menu';
     const menuButtonBg = document.createElement('div');
     menuButtonBg.classList.add('menu-button-bg');
+    menuButtonBg.classList.add('nav-button-bg');
     menuButton.appendChild(menuButtonBg);
 
     const specialsButton = document.createElement('div');
@@ -39,6 +40,7 @@ const generateInitialStructure = () => {
     specialsButton.textContent = `specials`;
     const specialsButtonBg = document.createElement('div');
     specialsButtonBg.classList.add('specials-button-bg');
+    specialsButtonBg.classList.add('nav-button-bg');
     // specialsButtonBg.classList.add('selected-button-bg');
     specialsButton.appendChild(specialsButtonBg);
 
@@ -50,6 +52,7 @@ const generateInitialStructure = () => {
     aboutButton.textContent = 'about';
     const aboutButtonBg = document.createElement('div');
     aboutButtonBg.classList.add('menu-button-bg');
+    aboutButtonBg.classList.add('nav-button-bg');
     // aboutButtonBg.classList.add('selected-button-bg');
     aboutButton.appendChild(aboutButtonBg);
 
@@ -60,6 +63,7 @@ const generateInitialStructure = () => {
     contactButton.textContent = 'contact';
     const contactButtonBg = document.createElement('div');
     contactButtonBg.classList.add('contact-button-bg');
+    contactButtonBg.classList.add('nav-button-bg');
     // contactButtonBg.classList.add('selected-button-bg');
     contactButton.appendChild(contactButtonBg);
     

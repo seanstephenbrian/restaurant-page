@@ -150,6 +150,7 @@ header {
 }
 
 .nav-button {
+    cursor: pointer;
     width: calc(2.2*var(--rvv));
     position: relative;
     z-index: 5;
