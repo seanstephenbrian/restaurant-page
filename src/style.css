@@ -33,27 +33,18 @@ time, mark, audio, video {
 }
 
 @font-face {
-    font-family: 'Serreria Sobria';
-    src: url('./fonts/serreria/sobria/serreria-sobria.otf');
-}
-
-@font-face {
-    font-family: 'Neometrika';
-    src: url('./fonts/neometrika/neometrika-bold.ttf');
-}
-
-@font-face {
     font-family: 'Rurik';
     src: url('./fonts/rurik/rurik.ttf');
 }
 
 @font-face {
-    font-family: 'Mnemion';
-    src: url('./fonts/mnemion/mnemion.ttf');
+    font-family: 'Oathkeeper';
+    src: url('./fonts/oathkeeper/oathkeeper.ttf');
 }
 
 html {
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 html, body {
@@ -66,7 +57,7 @@ body {
     flex-direction: column;
     /* gap: calc(1.5*var(--rvv)); */
     align-items: center;
-    background-image: url('./bg-full.jpg');
+    background-image: url('./bg-smaller.jpg');
     background-repeat: repeat-y;
     background-position: center;
     background-size: cover;
@@ -172,12 +163,23 @@ header {
 }
 
 #content {
+    background-image: url('./paper.jpg');
+    background-size: cover;
+    filter: sepia(60%) brightness(.9) ;
+    position: relative;
+    margin-top: calc(0.5*var(--rvv));
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.687);
+    border-radius: calc(.1*var(--rvv));
     display: flex;
     flex: auto;
-    width: 100%;
+    width: clamp(400px, 1000px, 80%);
     flex-direction: column;
     padding: calc(1.5*var(--rvv)) 0;
     align-items: center;
+    font-family: 'Oathkeeper';
+    padding: calc(0.6*var(--rvv)) calc(0.8*var(--rvv));
+    color: #550000;
+    font-size: calc(.7*var(--rvv));
 }
 
 footer {
