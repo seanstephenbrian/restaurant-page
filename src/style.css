@@ -150,15 +150,18 @@ header {
 }
 
 .nav-button {
+    width: calc(2.2*var(--rvv));
     position: relative;
     z-index: 5;
     padding: calc(.2*var(--rvv)) calc(var(--rvv));
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .selected-button-bg::before {
     position: absolute;
-
-    /* left: calc(.45*var(--rvv)); */
+    left: calc(.7*var(--rvv));
     bottom: calc(-0.5*var(--rvv));    
     content: "";
     height: calc(2.5*var(--rvv));

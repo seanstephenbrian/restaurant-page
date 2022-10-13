@@ -30,7 +30,6 @@ const generateInitialStructure = () => {
     menuButton.textContent = 'menu';
     const menuButtonBg = document.createElement('div');
     menuButtonBg.classList.add('menu-button-bg');
-    menuButtonBg.classList.add('selected-button-bg');
     menuButton.appendChild(menuButtonBg);
 
     const specialsButton = document.createElement('div');
@@ -43,17 +42,26 @@ const generateInitialStructure = () => {
     // specialsButtonBg.classList.add('selected-button-bg');
     specialsButton.appendChild(specialsButtonBg);
 
+
     const aboutButton = document.createElement('div');
     aboutButton.classList.add('about-button');
     aboutButton.classList.add('nav-button');
     nav.appendChild(aboutButton);
     aboutButton.textContent = 'about';
+    const aboutButtonBg = document.createElement('div');
+    aboutButtonBg.classList.add('menu-button-bg');
+    // aboutButtonBg.classList.add('selected-button-bg');
+    aboutButton.appendChild(aboutButtonBg);
 
     const contactButton = document.createElement('div');
     contactButton.classList.add('contact-button');
     contactButton.classList.add('nav-button');
     nav.appendChild(contactButton);
     contactButton.textContent = 'contact';
+    const contactButtonBg = document.createElement('div');
+    contactButtonBg.classList.add('contact-button-bg');
+    // contactButtonBg.classList.add('selected-button-bg');
+    contactButton.appendChild(contactButtonBg);
     
     // create main content div:
     const content = document.createElement('div');
