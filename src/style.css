@@ -24,6 +24,7 @@ time, mark, audio, video {
     --shadow-offset: calc(0.1*var(--rvv));
     --red: #e60000;
     --yellow: #ffd014;
+    --purple: #8f0099;
 }
 
 @font-face {
@@ -122,6 +123,11 @@ header {
     text-align: center;
 }
 
+header:hover {
+    color: var(--purple);
+    text-shadow: calc(1.1*var(--shadow-offset)) var(--shadow-offset) black;
+}
+
 .nav:before {
     position: absolute;
     content: "";
@@ -139,7 +145,7 @@ header {
     font-family: 'Serreria Extravagante';
     font-size: calc(.4vh + .4vw + .4*var(--rvv));
     color: var(--yellow);
-    text-shadow: calc(0.8*var(--shadow-offset)) calc(0.8*var(--shadow-offset)) black;
+    text-shadow: calc(0.7*var(--shadow-offset)) calc(0.7*var(--shadow-offset)) black;
     width: 100%;
     min-height: calc(1*var(--rvv));
     padding: calc(0.5*var(--rvv)) 0;
@@ -158,6 +164,15 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.05s linear;
+}
+
+.nav-button:hover {
+    transform: scale(1.1);
+}
+
+.selected-button {
+    color: var(--red);
 }
 
 .selected-button-bg::before {
