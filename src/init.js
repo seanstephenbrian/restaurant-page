@@ -41,7 +41,6 @@ const generateInitialStructure = () => {
     const specialsButtonBg = document.createElement('div');
     specialsButtonBg.classList.add('specials-button-bg');
     specialsButtonBg.classList.add('nav-button-bg');
-    // specialsButtonBg.classList.add('selected-button-bg');
     specialsButton.appendChild(specialsButtonBg);
 
 
@@ -53,7 +52,6 @@ const generateInitialStructure = () => {
     const aboutButtonBg = document.createElement('div');
     aboutButtonBg.classList.add('menu-button-bg');
     aboutButtonBg.classList.add('nav-button-bg');
-    // aboutButtonBg.classList.add('selected-button-bg');
     aboutButton.appendChild(aboutButtonBg);
 
     const contactButton = document.createElement('div');
@@ -64,7 +62,6 @@ const generateInitialStructure = () => {
     const contactButtonBg = document.createElement('div');
     contactButtonBg.classList.add('contact-button-bg');
     contactButtonBg.classList.add('nav-button-bg');
-    // contactButtonBg.classList.add('selected-button-bg');
     contactButton.appendChild(contactButtonBg);
     
     // create main content div:

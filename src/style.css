@@ -148,6 +148,7 @@ header {
 }
 
 .selected-button-bg::before {
+    pointer-events: none;
     position: absolute;
     left: calc(.7*var(--rvv));
     bottom: calc(-0.5*var(--rvv));    
