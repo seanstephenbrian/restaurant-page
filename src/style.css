@@ -58,7 +58,7 @@ html {
 html, body {
     min-height: 100vh;
 }
-
+/* 
         header,
         footer,
         body > div {
@@ -67,7 +67,7 @@ html, body {
 
         .nav > div {
             border: 1px solid blue;
-        }
+        } */
 
 body {
     margin: 0 clamp(30px, 15vw, 225px);
@@ -92,8 +92,19 @@ body {
     z-index: 1;
 }
 
-body > * {
+.corner-gradient {
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,0) 0%, rgba(0, 0, 0, 0.679) 100%);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
     z-index: 2;
+}
+
+body > * {
+    z-index: 3;
 }
 
 header {
@@ -111,19 +122,53 @@ header {
     text-align: center;
 }
 
+.nav:before {
+    position: absolute;
+    content: "";
+    height: calc(1.8*var(--rvv));
+    width: 100vw;
+    background: url('./mosaic.jpg') repeat 0 0;
+    filter: contrast(1.05) brightness(90%);
+    background-size: 40em;
+    display: block;
+    box-shadow: 0 0 calc(1.5*var(--rvv)) calc(.1*var(--rvv)) black;
+}
+
+
 .nav {
     font-family: 'Serreria Extravagante';
-    font-size: calc(var(--rvv));
+    font-size: calc(.4vh + .4vw + .4*var(--rvv));
     color: var(--yellow);
     text-shadow: calc(0.8*var(--shadow-offset)) calc(0.8*var(--shadow-offset)) black;
     width: 100%;
     min-height: calc(1*var(--rvv));
     padding: calc(0.5*var(--rvv)) 0;
     display: flex;
-    flex-wrap: wrap;
-    gap: calc(2*var(--rvv));
+    /* flex-wrap: wrap; */
     justify-content: center;
     align-items: center;
+}
+
+.nav-button {
+    position: relative;
+    z-index: 5;
+    padding: calc(.2*var(--rvv)) calc(var(--rvv));
+}
+
+.selected-button-bg::before {
+    position: absolute;
+
+    /* left: calc(.45*var(--rvv)); */
+    bottom: calc(-0.5*var(--rvv));    
+    content: "";
+    height: calc(2.5*var(--rvv));
+    aspect-ratio: 1.2;
+    background-image: url('./fruit.png');
+    background-size: cover;
+    filter: contrast(1.05) brightness(90%);
+    display: block;
+    z-index: -1;
+    filter: drop-shadow(0 0 20px black);
 }
 
 #content {
@@ -136,6 +181,10 @@ header {
 }
 
 footer {
+    font-family: 'Serreria Extravagante';
+    color: var(--yellow);
+    text-shadow: calc(0.6*var(--shadow-offset)) calc(0.6*var(--shadow-offset)) black;
+    font-size: calc(.4*var(--rvv));
     min-height: calc(1.5*var(--rvv));
     width: 100%;
     margin-top: auto;

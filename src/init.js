@@ -2,9 +2,15 @@ const generateInitialStructure = () => {
 
     const body = document.querySelector('body');
 
+    // create overlay to apply filters to background image:
     const bgFilter = document.createElement('div');
     bgFilter.classList.add('bg-filter');
     body.appendChild(bgFilter);
+
+    // create overlay for shadow gradient in screen corners:
+    const cornerGradient = document.createElement('div');
+    cornerGradient.classList.add('corner-gradient');
+    body.appendChild(cornerGradient);
 
     // create header section:
     const header = document.createElement('header');
@@ -22,18 +28,32 @@ const generateInitialStructure = () => {
     menuButton.classList.add('nav-button');
     nav.appendChild(menuButton);
     menuButton.textContent = 'menu';
+    const menuButtonBg = document.createElement('div');
+    menuButtonBg.classList.add('menu-button-bg');
+    menuButtonBg.classList.add('selected-button-bg');
+    menuButton.appendChild(menuButtonBg);
 
     const specialsButton = document.createElement('div');
     specialsButton.classList.add('specials-button');
     specialsButton.classList.add('nav-button');
     nav.appendChild(specialsButton);
-    specialsButton.textContent = `today's specials`;
+    specialsButton.textContent = `specials`;
+    const specialsButtonBg = document.createElement('div');
+    specialsButtonBg.classList.add('specials-button-bg');
+    // specialsButtonBg.classList.add('selected-button-bg');
+    specialsButton.appendChild(specialsButtonBg);
 
     const aboutButton = document.createElement('div');
     aboutButton.classList.add('about-button');
     aboutButton.classList.add('nav-button');
     nav.appendChild(aboutButton);
     aboutButton.textContent = 'about';
+
+    const contactButton = document.createElement('div');
+    contactButton.classList.add('contact-button');
+    contactButton.classList.add('nav-button');
+    nav.appendChild(contactButton);
+    contactButton.textContent = 'contact';
     
     // create main content div:
     const content = document.createElement('div');
