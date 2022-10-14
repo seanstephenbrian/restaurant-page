@@ -190,6 +190,32 @@ header {
     font-size: calc(.7*var(--rvv));
 }
 
+.menu-title {
+    font-size: calc(var(--rvv));
+}
+
+.menu-date {
+    font-size: calc(0.6*var(--rvv));
+}
+
+.menu-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: calc(.4*var(--rvv));
+}
+
+.course-title {
+    font-size: calc(0.9*var(--rvv));
+    margin: calc(.3*var(--rvv)) 0 calc(.1*var(--rvv));
+}
+
+.menu-item {
+    text-align: center;
+    font-size: calc(.6*var(--rvv));
+}
+
 footer {
     font-family: 'Serreria Extravagante';
     color: var(--yellow);
