@@ -48,11 +48,6 @@ html {
 
 }
 
-/* html, body {
-    max-width: 100vw;
-    min-height: 100vh;
-} */
-
 body {
     margin: 0 clamp(30px, 15vw, 225px);
     display: flex;
@@ -123,7 +118,6 @@ header {
     box-shadow: 0 0 calc(1.5*var(--rvv)) calc(.1*var(--rvv)) black;
 }
 
-
 .nav {
     font-family: 'Serreria Extravagante';
     font-size: calc(.4vh + .4vw + .4*var(--rvv));
@@ -133,7 +127,6 @@ header {
     min-height: calc(1*var(--rvv));
     padding: calc(0.5*var(--rvv)) 0;
     display: flex;
-    /* flex-wrap: wrap; */
     justify-content: center;
     align-items: center;
 }
