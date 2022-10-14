@@ -19,7 +19,7 @@ const renderSpecials = () => {
     const specialsDescription = document.createElement('h2');
     content.appendChild(specialsDescription);
     specialsDescription.classList.add('specials-description');
-    specialsDescription.textContent = `below you will find a rotating selection of uniquely roman dishes prepared according to the specifications of caelius apicius, whose eponymous cookbook is an invaluable collection of recipes featuring ingredients from across the imperium.`;
+    specialsDescription.textContent = `below you will find a rotating selection of uniquely roman dishes prepared according to the specifications of caelius apicius.`;
 
     const specialsList = document.createElement('ul');
     specialsList.classList.add('list');

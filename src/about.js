@@ -32,12 +32,12 @@ const renderAbout = () => {
     aboutParaThree.textContent = 
         `in addition to the freshest ingredients, we make liberal use of flavor-enhancing additions such as
         garum — an umami-rich condiment made from fermented anchovies — and root of silphium, otherwise known as laser,
-        a truly intoxicating seasoning that is at the heart of real roman cookery.`;
+        a truly intoxicating seasoning that is at the heart of real roman cooking.`;
     const aboutParaFour = document.createElement('p');
     aboutParaFour.classList.add('about-para-4');
     aboutText.appendChild(aboutParaFour);
     aboutParaFour.textContent = 
-        `thank you for your interest in our restaurant — we hope to feed you soon. bibe multis annis!`;
+        `thank you for your interest in apicius cafe — we hope to feed you soon. bibe multis annis!`;
 };
 
 export default renderAbout;

@@ -1,4 +1,4 @@
-import Drawing2 from './img/drawing-2.png';
+import WelcomeDrawing from './img/welcome-drawing.png';
 
 const renderWelcome = () => {
 
@@ -8,15 +8,15 @@ const renderWelcome = () => {
      content.setAttribute('style', 'flex: none; margin-top: calc(var(--rvv));');
 
      const drawing = document.createElement('img');
-     drawing.src = Drawing2;
-     drawing.setAttribute('alt','Drawing of a Roman wine dipper');
-     drawing.classList.add('drawing-two');
+     drawing.src = WelcomeDrawing;
+     drawing.setAttribute('alt','Drawing of a Roman casa di forno - a bakery and flour mill');
+     drawing.classList.add('welcome-drawing');
      content.appendChild(drawing);
  
      const welcomeMessage = document.createElement('div');
      welcomeMessage.classList.add('welcome-message');
      content.appendChild(welcomeMessage);
-     welcomeMessage.textContent = 'welcome!';
+     welcomeMessage.textContent = 'welcome! please click any of the links above to learn more about apicius cafe.';
 
 };
 

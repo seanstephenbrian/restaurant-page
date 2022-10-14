@@ -18,7 +18,14 @@ const renderContact = () => {
     const contactInfo = document.createElement('div');
     contactInfo.classList.add('contact-info');
     content.appendChild(contactInfo);
-    contactInfo.textContent = 'contact us';
+    const contactParaOne = document.createElement('p');
+    contactInfo.appendChild(contactParaOne);
+    contactParaOne.textContent = 'apicius cafe is located at vicus caesaris CXXIII, roma.';
+    const contactParaTwo = document.createElement('p');
+    contactInfo.appendChild(contactParaTwo);
+    contactParaTwo.textContent = 
+        `we are open every day of the week from first light until media nox. 
+        if you cannot visit us in person, you may contact us via cursus publicus.`;
 };
 
 export default renderContact;
