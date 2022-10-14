@@ -45,11 +45,13 @@ time, mark, audio, video {
 html {
     box-sizing: border-box;
     overflow-x: hidden;
+
 }
 
-html, body {
+/* html, body {
+    max-width: 100vw;
     min-height: 100vh;
-}
+} */
 
 body {
     margin: 0 clamp(30px, 15vw, 225px);
@@ -57,16 +59,19 @@ body {
     flex-direction: column;
     align-items: center;
     background-image: url('./img/bg.jpg');
-    background-repeat: repeat-y;
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     z-index: 0;
+  
 }
 
 .bg-filter {
     backdrop-filter: contrast(1.05) saturate(5) sepia(60%) brightness(90%);
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    max-width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
@@ -76,8 +81,10 @@ body {
 .corner-gradient {
     background: rgb(255,255,255);
     background: radial-gradient(circle, rgba(255,255,255,0) 0%, rgba(0, 0, 0, 0.679) 100%);
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    max-width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
@@ -163,6 +170,7 @@ header {
 }
 
 #content {
+    max-width: 80vw;
     background-image: url('./img/paper.jpg');
     background-size: cover;
     filter: sepia(60%) brightness(.9) ;
@@ -196,9 +204,8 @@ footer {
 }
 
 /* only apply hover effects on larger screens: */
+@media only screen and (min-width: 700px) { 
 
-@media only screen and (min-width: 700px) {
-    
     header:hover {
         color: var(--purple);
         text-shadow: calc(1.1*var(--shadow-offset)) var(--shadow-offset) black;
@@ -207,5 +214,19 @@ footer {
     .nav-button:hover {
         transform: scale(1.1);
     }
+}
 
+/* tighter nav button L/R padding on narrow screens: */
+@media only screen and (max-width: 700px) {
+
+    .nav-button {
+        padding: calc(.2*var(--rvv)) calc(.5*var(--rvv));
+    }
+
+    /* adjust fruit basket size & position to match new padding: */
+    .selected-button-bg::before {
+        left: calc(.1*var(--rvv));
+        bottom: calc(-0.5*var(--rvv));    
+        height: calc(2.2*var(--rvv));
+    }
 }

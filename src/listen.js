@@ -1,7 +1,8 @@
 import renderMenu from './menu.js';
 import renderSpecials from './specials.js';
 import renderAbout from './about.js';
-import renderContact from './contact.js'
+import renderContact from './contact.js';
+import { setBodyHeight, setBodyWidth } from './body.js';
 
 const addNavListeners = () => {
 
@@ -48,6 +49,16 @@ const addNavListeners = () => {
     const contactButton = document.querySelector('.contact-button');
     contactButton.addEventListener('click', () => {
         renderContact();
+    });
+
+    // set initial height/width:
+    setBodyHeight();
+    setBodyWidth();
+
+    // adjust body height & width whenever the window is resized:
+    window.addEventListener('resize', () => {
+        setBodyHeight();
+        setBodyWidth();
     });
 
 };
