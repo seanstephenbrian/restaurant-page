@@ -190,15 +190,15 @@ header {
     font-size: calc(.7*var(--rvv));
 }
 
-.menu-title {
-    font-size: calc(var(--rvv));
+.page-title {
+    font-size: calc(1.1*var(--rvv));
 }
 
-.menu-date {
+.date {
     font-size: calc(0.6*var(--rvv));
 }
 
-.menu-list {
+.list {
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -208,12 +208,46 @@ header {
 
 .course-title {
     font-size: calc(0.9*var(--rvv));
-    margin: calc(.3*var(--rvv)) 0 calc(.1*var(--rvv));
+    margin: calc(.1*var(--rvv)) 0 calc(.1*var(--rvv));
 }
 
-.menu-item {
+.menu-item,
+.special-item {
     text-align: center;
     font-size: calc(.6*var(--rvv));
+}
+
+.special-item {
+    margin: calc(0.2*var(--rvv)) 0;
+}
+
+.menu-description,
+.specials-description {
+    text-align: center;
+    font-size: calc(.5*var(--rvv));
+    margin: calc(.6*var(--rvv)) 0;
+}
+
+.drawing-one,
+.drawing-two {
+    filter: contrast(1.05) saturate(2) sepia(20%) brightness(90%) drop-shadow(0 0 calc(0.4*var(--rvv)) black);   
+}
+
+.drawing-one {
+    width: calc(7*var(--rvv));
+}
+
+.drawing-two {
+    width: calc(8*var(--rvv));
+}
+
+p {
+    font-size: calc(.7*var(--rvv));
+    margin-bottom: calc(.7*var(--rvv));
+}
+
+.about-para-1 {
+    margin-top: calc(.8*var(--rvv));
 }
 
 footer {

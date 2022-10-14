@@ -1,3 +1,5 @@
+import printDate from './date.js';
+
 const renderMenu = () => {
 
     const content = document.querySelector('#content');
@@ -8,44 +10,20 @@ const renderMenu = () => {
     const menuTitle = document.createElement('h1');
     content.appendChild(menuTitle);
     menuTitle.textContent = 'cafe menu';
-    menuTitle.classList.add('menu-title');
+    menuTitle.classList.add('page-title');
 
     const menuDate = document.createElement('h2');
     content.appendChild(menuDate);
-    const today = new Date();
-    const day = today.getDate();
-    let month = today.getMonth() + 1;
-    if (month === 1) {
-        month ='january';
-    } else if (month === 2) {
-        month = 'february';
-    } else if (month === 3) {
-        month = 'march';
-    } else if (month === 4) {
-        month = 'april';
-    } else if (month === 5) {
-        month = 'may';
-    } else if (month === 6) {
-        month = 'june';
-    } else if (month === 7) {
-        month = 'july';
-    } else if (month === 8) {
-        month = 'august';
-    } else if (month === 9) {
-        month = 'september';
-    } else if (month === 10) {
-        month = 'october';
-    } else if (month === 11) {
-        month = 'november';
-    } else if (month === 12) {
-        month = 'december';
-    }
-    const year = today.getFullYear();
-    menuDate.textContent = `${month} ${day}, ${year}`;
-    menuDate.classList.add('menu-date');
+    menuDate.textContent = printDate();
+    menuDate.classList.add('date');
+
+    const menuDescription = document.createElement('h2');
+    content.appendChild(menuDescription);
+    menuDescription.classList.add('menu-description');
+    menuDescription.textContent = 'our cafe menu, comprised of simple preparations of beloved roman dishes, is available all day, every day of the annum:';
 
     const menuItems = document.createElement('ul');
-    menuItems.classList.add('menu-list');
+    menuItems.classList.add('list');
     content.appendChild(menuItems);
     const currentMenu = [
         'gustatio:',
