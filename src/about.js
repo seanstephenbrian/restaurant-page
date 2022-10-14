@@ -30,9 +30,8 @@ const renderAbout = () => {
     aboutParaThree.classList.add('about-para-3');
     aboutText.appendChild(aboutParaThree);
     aboutParaThree.textContent = 
-        `in addition to the freshest ingredients, we make liberal use of flavor-enhancing additions such as
-        garum — an umami-rich condiment made from fermented anchovies — and root of silphium, otherwise known as laser,
-        a truly intoxicating seasoning that is at the heart of real roman cooking.`;
+        `we also make liberal use of flavor-enhancing additions such as garum — an umami-rich condiment made from fermented fish
+         — and silphium, otherwise known as laser, a plant whose roots produce a truly intoxicating and addictive seasoning.`;
     const aboutParaFour = document.createElement('p');
     aboutParaFour.classList.add('about-para-4');
     aboutText.appendChild(aboutParaFour);
