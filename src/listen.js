@@ -6,6 +6,12 @@ import { setBodyHeight, setBodyWidth } from './body.js';
 
 const addNavListeners = () => {
 
+    // add header click listener which opens a new tab with the apicius cookbook:
+    const header = document.querySelector('header');
+    header.addEventListener('click', () => {
+        window.open('https://www.gutenberg.org/files/29728/29728-h/29728-h.htm', '_blank');
+    });
+
     // add nav button listeners for animation/styling:
     const navButtons = document.querySelectorAll('.nav-button');
     navButtons.forEach(button => {

@@ -96,6 +96,7 @@ body > * {
 }
 
 header {
+    cursor: pointer;
     padding: calc(0.5*var(--rvv)) 0;
     font-family: 'Rurik';
     font-size: calc(2*var(--rvv));
