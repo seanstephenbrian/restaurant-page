@@ -31,3 +31,11 @@ absolute positioning to achieve this effect. there's also a few CSS hover effect
 and a hidden link in the header.
 
 here are demo screenshots of the various tabs on the webpage:
+
+<img src="https://raw.githubusercontent.com/seanstephenbrian/restaurant-page/main/src/img/screenshot-1.png" alt="screenshot of the welcome page">
+
+<img src="https://raw.githubusercontent.com/seanstephenbrian/restaurant-page/main/src/img/screenshot-2.png" alt="screenshot of the specials page">
+
+extra-wide nav bar with repeating mosaic background image:
+
+<img src="https://raw.githubusercontent.com/seanstephenbrian/restaurant-page/main/src/img/screenshot-3.png" alt="screenshot of extra-wide nav bar showing x-repeat">
