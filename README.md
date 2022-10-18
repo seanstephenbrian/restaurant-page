@@ -30,7 +30,7 @@ visually declaring which 'page' of the site the user is now visiting. i used a <
 absolute positioning to achieve this effect. there's also a few CSS hover effects enabled at desktop-sized screen widths,
 and a hidden link in the header.
 
-here are demo screenshots of the various tabs on the webpage:
+here's a couple demo screenshots:
 
 <img src="https://raw.githubusercontent.com/seanstephenbrian/restaurant-page/main/src/img/screenshot-1.png" alt="screenshot of the welcome page">
 
