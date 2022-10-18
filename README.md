@@ -32,10 +32,10 @@ and a hidden link in the header.
 
 here's a couple demo screenshots:
 
-<img src="https://raw.githubusercontent.com/seanstephenbrian/restaurant-page/main/src/img/screenshot-1.png" alt="screenshot of the welcome page">
+<img src="https://raw.githubusercontent.com/seanstephenbrian/restaurant-page/main/src/img/screenshot-1.jpg" alt="screenshot of the welcome page">
 
-<img src="https://raw.githubusercontent.com/seanstephenbrian/restaurant-page/main/src/img/screenshot-2.png" alt="screenshot of the specials page">
+<img src="https://raw.githubusercontent.com/seanstephenbrian/restaurant-page/main/src/img/screenshot-2.jpg" alt="screenshot of the specials page">
 
 extra-wide nav bar with repeating mosaic background image:
 
-<img src="https://raw.githubusercontent.com/seanstephenbrian/restaurant-page/main/src/img/screenshot-3.png" alt="screenshot of extra-wide nav bar showing x-repeat">
+<img src="https://raw.githubusercontent.com/seanstephenbrian/restaurant-page/main/src/img/screenshot-3.jpg" alt="screenshot of extra-wide nav bar showing x-repeat">
