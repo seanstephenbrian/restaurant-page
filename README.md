@@ -1,11 +1,11 @@
 # restaurant-page
-a themed restaurant page dynamically generated with JS & bundled with webpack
+a themed restaurant page dynamically generated with JS
 
 live version: https://seanstephenbrian.github.io/restaurant-page/
 
 the concept behind this project was to use javascript to dynamically generate a basic website for an imaginary restaurant.
 
-the rendering of the site with js didn't present too many difficulties: event listeners trigger functions 
+the rendering of the site with JS didn't present too many difficulties: event listeners trigger functions 
 to re-render the main <code>#content</code> <code>div</code> when the user clicks one of the buttons in the nav bar. 
 these render functions add paragraphs, lists, and images to the <code>#content</code> <code>div</code> but do not re-render the header or footer.
 
