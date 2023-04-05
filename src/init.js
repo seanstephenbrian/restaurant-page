@@ -83,7 +83,7 @@ const generateInitialStructure = () => {
     // create footer:
     const footer = document.createElement('footer');
     body.appendChild(footer);
-    footer.textContent = 'copyright © 2022 | sean stephen brian';
+    footer.textContent = `copyright © ${new Date().getFullYear()} | sean stephen brian`;
 
     renderWelcome();
 
