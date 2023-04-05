@@ -6,4 +6,6 @@ this project is an informational website for an imaginary restaurant called **ap
 all DOM elements are dynamically created, deleted, and updated with javascript as the visitor 
 interacts with the website.
 
-i used css to create the ancient rome-inspired theme; one standout feature is the repeating mosaic background behind the nav bar, which is realized with a `::before` pseudo-element.
+i used custom css to create the ancient rome-inspired theme; one standout feature is the
+repeating mosaic background behind the nav bar, which is realized with a `::before` 
+pseudo-element.
