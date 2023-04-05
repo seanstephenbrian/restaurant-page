@@ -1,6 +1,6 @@
 # [apicius cafe](https://seanstephenbrian.github.io/restaurant-page/)
 
-<img src="https://raw.githubusercontent.com/seanstephenbrian/restaurant-page/main/src/img/screenshot-1.jpg" alt="screenshot of the welcome page">
+<img src="https://raw.githubusercontent.com/seanstephenbrian/restaurant-page/main/src/img/screenshot-3.jpg" alt="screenshot of the welcome page">
 
 this project is an informational website for an imaginary restaurant called **apicius cafe**.
 all DOM elements are dynamically created, deleted, and updated with javascript as the visitor 
